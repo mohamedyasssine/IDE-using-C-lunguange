@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1223</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>11</number>
+    </property>
+    <property name="topMargin">
+     <number>11</number>
+    </property>
+    <property name="horizontalSpacing">
+     <number>7</number>
+    </property>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>3</number>
+      </property>
+      <item row="2" column="0" colspan="2" alignment="Qt::AlignBottom">
+       <widget class="QTableView" name="tableView_2">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50000</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTreeWidget" name="treeWidget_4">
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>350</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <column>
+         <property name="text">
+          <string notr="true">1</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="2">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1415555</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QPlainTextEdit" name="plainTextEdit"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string> état des variable</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0" alignment="Qt::AlignTop">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 85, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>          Workspace</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" alignment="Qt::AlignLeft">
+       <widget class="QListWidget" name="listWidget">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1223</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(228, 224, 255);</string>
+   </property>
+   <widget class="QMenu" name="menufichiers">
+    <property name="title">
+     <string>fichiers</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionenregistrer"/>
+    <addaction name="separator"/>
+    <addaction name="actionnouveau"/>
+    <addaction name="separator"/>
+    <addaction name="actioncharger_fichier"/>
+    <addaction name="separator"/>
+    <addaction name="actionchanger_workspace"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuindications">
+    <property name="title">
+     <string>indications</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionaffectations"/>
+    <addaction name="separator"/>
+    <addaction name="actionlecture"/>
+    <addaction name="separator"/>
+    <addaction name="actionlecture_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionvariables"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuex_cution">
+    <property name="title">
+     <string>exécution</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionex_cuter"/>
+    <addaction name="separator"/>
+    <addaction name="actioninterrompre"/>
+    <addaction name="separator"/>
+    <addaction name="actionreprendre"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menufichiers"/>
+   <addaction name="menuindications"/>
+   <addaction name="menuex_cution"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionex_cuter">
+   <property name="text">
+    <string>exécuter</string>
+   </property>
+  </action>
+  <action name="actioninterrompre">
+   <property name="text">
+    <string>interrompre</string>
+   </property>
+  </action>
+  <action name="actionreprendre">
+   <property name="text">
+    <string>reprendre</string>
+   </property>
+  </action>
+  <action name="actionaffectations">
+   <property name="text">
+    <string>affectations</string>
+   </property>
+  </action>
+  <action name="actionlecture">
+   <property name="text">
+    <string>affichage</string>
+   </property>
+  </action>
+  <action name="actionlecture_2">
+   <property name="text">
+    <string>lecture</string>
+   </property>
+  </action>
+  <action name="actionvariables">
+   <property name="text">
+    <string>variables</string>
+   </property>
+  </action>
+  <action name="actionenregistrer">
+   <property name="text">
+    <string>enregistrer</string>
+   </property>
+  </action>
+  <action name="actionnouveau">
+   <property name="text">
+    <string>nouveau</string>
+   </property>
+  </action>
+  <action name="actioncharger_fichier">
+   <property name="text">
+    <string>charger fichier</string>
+   </property>
+  </action>
+  <action name="actionchanger_workspace">
+   <property name="text">
+    <string>changer workspace</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
